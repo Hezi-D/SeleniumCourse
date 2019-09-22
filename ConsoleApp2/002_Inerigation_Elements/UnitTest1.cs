@@ -10,12 +10,12 @@ using System.Data;
 namespace _002_Inerigation_Elements
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest2
     {
         [TestMethod]
-        public void TestMethod1()
+        [TestCategory("Driver interrogation")]
+        public void driverInttrogation()
         {
-
             var driver = GetChromeDriver();
             driver.Navigate().GoToUrl("https://ultimateqa.com/");
 
@@ -31,8 +31,37 @@ namespace _002_Inerigation_Elements
             x = driver.PageSource;
             x = driver.Title;
             x = driver.Url;
+        }
+
+        [TestMethod]
+        [TestCategory("Elements interrogation")]
+        public void elementsInttrogation()
+        {
+            var driver = GetChromeDriver();
+            driver.Navigate().GoToUrl("https://ultimateqa.com/");
+
+            var sampleElement = driver.FindElement(By.XPath("//*[@href='https://courses.ultimateqa.com']"));
+        }
+
+        [TestMethod]
+        [TestCategory("Quiz # 2")]
+        public void Quiz_2()
+        {
+            var driver = GetChromeDriver();
+            driver.Navigate().GoToUrl("https://ultimateqa.com/");
+
+            //1.Maximize the page
+            driver.Manage().Window.Maximize();
+
+            //2. Find button by id
+            var btnElement = driver.FindElement(By.Id("menu-item-504"));
+
+            //3. GetAttribute ("type") and assert that it equle the right value
+            var btnType = btnElement.GetAttribute("type");
+            Assert.AreEqual("", btnType);
 
 
+            driver.Close();
 
         }
 
