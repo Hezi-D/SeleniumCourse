@@ -33,6 +33,7 @@ namespace _002_Inerigation_Elements
             x = driver.Url;
         }
 
+
         [TestMethod]
         [TestCategory("Elements interrogation")]
         public void elementsInttrogation()
@@ -42,6 +43,7 @@ namespace _002_Inerigation_Elements
 
             var sampleElement = driver.FindElement(By.XPath("//*[@href='https://courses.ultimateqa.com']"));
         }
+
 
         [TestMethod]
         [TestCategory("Quiz # 2")]
@@ -86,11 +88,7 @@ namespace _002_Inerigation_Elements
             Assert.AreEqual(984, btnElement.Location.X);
             Assert.AreEqual(35, btnElement.Location.Y);
 
-
-
-
             driver.Close();
-
         }
 
 

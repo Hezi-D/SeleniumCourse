@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29215.179
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001", "001\001.csproj", "{22077AF9-9641-4CC2-A00F-C808C060B0BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_Navigation_And_Manipulation", "001\001_Navigation_And_Manipulation.csproj", "{22077AF9-9641-4CC2-A00F-C808C060B0BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_Elements_interrogations", "002_Inerigation_Elements\002_Elements_interrogations.csproj", "{4450F4F0-B82C-42B5-B759-D5D7F196721B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_Wait", "003_Wait\003_Wait.csproj", "{8329596B-E292-4CFC-A525-C61E1F2FD746}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4450F4F0-B82C-42B5-B759-D5D7F196721B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4450F4F0-B82C-42B5-B759-D5D7F196721B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4450F4F0-B82C-42B5-B759-D5D7F196721B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8329596B-E292-4CFC-A525-C61E1F2FD746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8329596B-E292-4CFC-A525-C61E1F2FD746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8329596B-E292-4CFC-A525-C61E1F2FD746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8329596B-E292-4CFC-A525-C61E1F2FD746}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
