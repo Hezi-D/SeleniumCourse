@@ -60,6 +60,34 @@ namespace _002_Inerigation_Elements
             var btnType = btnElement.GetAttribute("type");
             Assert.AreEqual("", btnType);
 
+            //4. GetCssValue ("letter-spacing") and assert
+            var btnCss = btnElement.GetCssValue("letter-spacing");
+            Assert.AreEqual("normal", btnCss);
+
+            //5. Assert is displayed
+            Assert.IsTrue(btnElement.Displayed);
+
+            //6. Assert its Enabeld
+            Assert.IsTrue(btnElement.Enabled);
+
+            //7. Assert its NOT selected
+            Assert.IsFalse(btnElement.Selected);
+
+            //8. Assert the text is correct
+            Assert.AreEqual("Courses", btnElement.Text);
+
+            //9. Assert the TagName is correct
+            Assert.AreEqual("li", btnElement.TagName);
+
+            //10. Assert the size height is 21
+            Assert.AreEqual(49, btnElement.Size.Height);
+
+            //11. Assert the Location is x=984 y=95
+            Assert.AreEqual(984, btnElement.Location.X);
+            Assert.AreEqual(35, btnElement.Location.Y);
+
+
+
 
             driver.Close();
 
