@@ -17,3 +17,7 @@ C:\Users\hazi\Source\Repos\003 SELENIUM C#\SELENIUM_COURSE\SeleniumCourse\Consol
 C:\Users\hazi\Source\Repos\003 SELENIUM C#\SELENIUM_COURSE\SeleniumCourse\ConsoleApp2\003_Wait\obj\Debug\003_Wait.csproj.CopyComplete
 C:\Users\hazi\Source\Repos\003 SELENIUM C#\SELENIUM_COURSE\SeleniumCourse\ConsoleApp2\003_Wait\obj\Debug\003_Wait.dll
 C:\Users\hazi\Source\Repos\003 SELENIUM C#\SELENIUM_COURSE\SeleniumCourse\ConsoleApp2\003_Wait\obj\Debug\003_Wait.pdb
+C:\Users\heziD\source\repos\002SELENIUM\001_TestSite\ConsoleApp2\003_Wait\obj\Debug\003_Wait.csprojAssemblyReference.cache
+C:\Users\heziD\source\repos\002SELENIUM\001_TestSite\ConsoleApp2\003_Wait\obj\Debug\003_Wait.csproj.CoreCompileInputs.cache
+C:\Users\heziD\source\repos\002SELENIUM\001_TestSite\ConsoleApp2\003_Wait\obj\Debug\003_Wait.dll
+C:\Users\heziD\source\repos\002SELENIUM\001_TestSite\ConsoleApp2\003_Wait\obj\Debug\003_Wait.pdb

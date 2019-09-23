@@ -1,16 +1,19 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 
 namespace _003_Wait
 {
+    
     [TestClass]
     public class UnitTest1
     {
-
+       
         //1. No such element mean the specific element not exist even in hidden mode, 
         //and the test check if this is the current exeption
         [TestMethod]
@@ -35,6 +38,38 @@ namespace _003_Wait
         }
 
 
+        //EXPLICIT WAIT
+        //*******************************************************************************
+        [TestMethod]
+        public void explicitWait1()
+        {
+            Thread.SpinWait(1000);
+        }
+
+        [TestMethod]
+        public void explicitWait2()
+        {
+            var driver = GetChromeDriver();
+            driver.Navigate().GoToUrl("https://ultimateqa.com/");
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+
+            IWebElement element = wait.Until((d) =>
+                {
+                    return d.FindElement(By.Id("Success"));
+                }
+            );
+
+        }
+
+        [TestMethod]
+        public void explicitWait4()
+        {
+            var driver = GetChromeDriver();
+            driver.Navigate().GoToUrl("https://ultimateqa.com/");
+         
+
+
+        }
 
 
         private IWebDriver GetChromeDriver()
